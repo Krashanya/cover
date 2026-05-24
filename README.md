@@ -31,10 +31,157 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 ## PROGRAM:
+```
+<html>
+    <head>
+        <title>
+            Book Cover
+        </title>
+        <style>
+            body{
+                margin:0;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                min-height:100px;
+            }
+            .book{
+                width: 500px;
+                height: 600px;
+                padding: 20px;
+                border: 3px solid blue;
+                background-image: url("bg.png");
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                box-shadow: 0 0 0 3px;
+            }
+            h1{
+                color: blue;
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            .line{
+                height: 2px;
+                background: blue;
+                margin-bottom: 20px;
+            }
+            .content{
+                text-align: justify;
+                color: black;
+                line-height: 1.7;
+                width: 500px;
+            }
+            .highlight{
+                background: yellow;
+                font-weight: bold;
+            }
+            .quote{
+                margin-top: 20px;
+                background: lightblue;
+                padding: 15px;
+                border-left: 5px solid blue;
+                border-radius: 6px;
+                text-align: center;
+                font-style: italic;
+                color: blue;
+                font-size: 15px;
+            }
+            .author{
+                margin-top: 30px;
+                background-color: white;
+                padding: 8px;
+                border-radius: 5px;
+                display: flex;
+                gap: 10px;
+                width: 500px;
+                align-items: center;
+            }
+            .author img{
+                width: 90px;
+                height: 120px;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+            .author h5{
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                font-weight: 550px;
+                color: blue;
+                line-height: 1.2;
+            }
+            .author p{
+                margin-top: 5px;
+                margin-bottom: 0;
+                line-height: 1.5;
+                color: black;
+            }
+            .footer{
+                position: absolute;
+                bottom: 5px;
+                left: 20px;
+                right: 20px;
+                background:blue ;
+                color: white;
+                padding: 15px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .price{
+                color: yellow;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="book">
+            <h1>About the Book</h1>
+        <div class="line"></div>
+        <div class="content">
+            This book
+            <span class="highlight">"Fundamentals of Web Application Development"</span>
+            provides an engaging journey through the art and science of web design.
+            It explores how creativity meets technology to craft visually appealing
+            and user-friendly websites. Readers will learn essential design principles,
+            layout techniques, responsive practices, and the importance of user experience
+            that transforms ideas into digital reality.
 
-
+        </div>
+        <div class="quote">
+            "Design is not just what it looks like and feels like —
+             design is how it works on the web."
+        </div>
+        <div class="author">
+            <img src="25016806.jpg">
+        <div>
+            <h5>Ms Krashanya G</h5>
+            <p>
+               Krashanya is a passionate learner and aspiring web developer
+               with a strong interest in designing creative and user-friendly
+               websites. Her dedication towards learning and creativity
+              inspires her to build professional and attractive web applications.
+            </p>
+        </div>
+        </div>
+        <div class="footer">
+            <div>
+                <b>SEC Publishers</b><br>
+                Printed in India
+            </div>
+            <div>
+                Price: <span class="price">₹399</span>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+```
 ## OUTPUT:
-
+![alt text](image.png)
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
